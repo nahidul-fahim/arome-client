@@ -53,14 +53,13 @@ export default function Header() {
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 w-full transition-all duration-200",
+        "sticky top-0 flex flex-col items-center justify-start z-50 w-full transition-all duration-200",
         isScrolled
           ? "bg-background/95 backdrop-blur-md shadow-sm"
           : "bg-background"
       )}
     >
-      {/* Top bar */}
-      <div className="hidden border-b py-2 lg:block">
+      <div className="hidden w-full lg:flex justify-center  border-b py-2">
         <div className="container flex items-center justify-between">
           <p className="text-sm text-muted-foreground">
             Free shipping on orders over $50
