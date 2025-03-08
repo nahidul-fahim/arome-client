@@ -28,11 +28,12 @@ import { Badge } from "@/components/ui/badge";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const categories = [
+  { name: "Attars", href: "/category/attars" },
   { name: "Perfumes", href: "/category/perfumes" },
   { name: "Fragrances", href: "/category/fragrances" },
-  { name: "Attar", href: "/category/attar" },
-  { name: "Prayer Caps", href: "/category/prayer-caps" },
-  { name: "Islamic Clothing", href: "/category/islamic-clothing" },
+  { name: "Oud Collection", href: "/category/oud-collection" },
+  { name: "Musk Collection", href: "/category/musk-collection" },
+  { name: "Gift Sets", href: "/category/gift-sets" },
   { name: "Accessories", href: "/category/accessories" },
 ];
 
@@ -59,10 +60,11 @@ export default function Header() {
           : "bg-background"
       )}
     >
+      {/* Top bar */}
       <div className="hidden w-full lg:flex justify-center  border-b py-2">
         <div className="container flex items-center justify-between">
           <p className="text-sm text-muted-foreground">
-            Free shipping on orders over $50
+            Free shipping on orders over $50 | Use code FRAGRANCE10 for 10% off
           </p>
           <div className="flex items-center gap-4">
             <Link href="/track-order" className="text-sm hover:text-primary">
@@ -91,7 +93,7 @@ export default function Header() {
             <div className="flex flex-col gap-6 py-4">
               <Link href="/" className="flex items-center gap-2 font-bold">
                 <Droplets className="h-6 w-6 text-primary" />
-                <span className="text-xl">Attar Essentials</span>
+                <span className="text-xl">Attar Haven</span>
               </Link>
               <div className="relative">
                 <Input placeholder="Search products..." className="pr-8" />
@@ -138,9 +140,7 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 font-bold">
           <Droplets className="h-6 w-6 text-primary" />
-          <span className="text-xl hidden sm:inline-block">
-            Attar Essentials
-          </span>
+          <span className="text-xl hidden sm:inline-block">Attar Haven</span>
         </Link>
 
         {/* Desktop navigation */}
