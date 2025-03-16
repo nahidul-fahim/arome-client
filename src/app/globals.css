@@ -5,9 +5,10 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
+  /* fonts */
   --font-openSans: var(--font-openSans);
   --font-lora: var(--font-lora);
-  /* Chart colors */
+  /* colors */
   --color-background: #ffffff;
   --color-dark: #21252c;
   --color-foreground: #272B32;
@@ -21,7 +22,6 @@
   --color-border: #dee2e6;
   --color-input: #ced4da;
   --color-ring: #adb5bd;
-  /*color- Semantic colors */
   --color-success: #198754;
   --color-info: #0dcaf0;
   --color-warning: #ffc107;
@@ -36,5 +36,8 @@
   body {
     @apply bg-white text-black;
     font-family: var(--font-openSans);
+  }
+  ::selection {
+    @apply bg-secondary text-white;
   }
 }

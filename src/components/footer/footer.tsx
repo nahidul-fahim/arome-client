@@ -14,10 +14,9 @@ import { Input } from "@/components/ui/input";
 
 export default function Footer() {
   return (
-    <footer className="">
-      <div className="container py-12 md:py-16">
+    <footer className="bg-muted mx-auto w-full flex justify-center py-12 md:py-16">
+      <div className="container">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-          {/* Company info */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2 font-bold">
               <Droplets className="h-6 w-6 text-primary" />
@@ -28,16 +27,16 @@ export default function Footer() {
               the world since 2010.
             </p>
             <div className="flex gap-4">
-              <Button variant="ghost" size="icon" aria-label="Facebook">
+              <Button variant="secondary" size="icon" aria-label="Facebook">
                 <Facebook className="h-5 w-5" />
               </Button>
-              <Button variant="ghost" size="icon" aria-label="Instagram">
+              <Button variant="secondary" size="icon" aria-label="Instagram">
                 <Instagram className="h-5 w-5" />
               </Button>
-              <Button variant="ghost" size="icon" aria-label="Twitter">
+              <Button variant="secondary" size="icon" aria-label="Twitter">
                 <Twitter className="h-5 w-5" />
               </Button>
-              <Button variant="ghost" size="icon" aria-label="Youtube">
+              <Button variant="secondary" size="icon" aria-label="Youtube">
                 <Youtube className="h-5 w-5" />
               </Button>
             </div>
