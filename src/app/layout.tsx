@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Lato } from "next/font/google";
+import { Lora, Open_Sans } from "next/font/google";
 
-const lato = Lato({
+const openSans = Open_Sans({
   subsets: ["latin"],
-  weight: ["400", "700"],
-  variable: "--font-lato",
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-openSans",
+});
+const lora = Lora({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-lora",
 });
 export const metadata: Metadata = {
   title: "Areej",
@@ -19,9 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${lato.variable} antialiased`}
-      >
+      <body className={`${openSans.variable} ${lora.variable} antialiased`}>
         {children}
       </body>
     </html>
