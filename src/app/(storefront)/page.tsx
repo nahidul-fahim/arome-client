@@ -1,9 +1,9 @@
-
+import Homepage from "@/features/homepage";
 
 export default function Home() {
   return (
     <main>
-      This is home page
+      <Homepage />
     </main>
   );
 }
