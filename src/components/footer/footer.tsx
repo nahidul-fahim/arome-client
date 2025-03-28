@@ -14,7 +14,7 @@ import { Input } from "@/components/ui/input";
 
 export default function Footer() {
   return (
-    <footer className="bg-muted mx-auto w-full flex justify-center py-12 md:py-16">
+    <footer className="bg-muted mx-auto w-full flex flex-col justify-center items-center py-14">
       <div className="container">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">
@@ -80,6 +80,22 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/shipping"
+                  className="text-sm text-muted-foreground hover:text-foreground"
+                >
+                  Shipping Policy
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/returns"
+                  className="text-sm text-muted-foreground hover:text-foreground"
+                >
+                  Returns & Refunds
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/privacy-policy"
                   className="text-sm text-muted-foreground hover:text-foreground"
                 >
@@ -132,9 +148,9 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 border-t pt-6 text-center text-sm text-muted-foreground">
+        {/* <div className="border-t text-center text-sm text-muted-foreground border">
           <p>© {new Date().getFullYear()} Attar Haven. All rights reserved.</p>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

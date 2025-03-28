@@ -28,13 +28,13 @@ import { Badge } from "@/components/ui/badge";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const categories = [
-  { name: "Attars", href: "/category/attars" },
   { name: "Perfumes", href: "/category/perfumes" },
-  { name: "Fragrances", href: "/category/fragrances" },
-  { name: "Oud Collection", href: "/category/oud-collection" },
-  { name: "Musk Collection", href: "/category/musk-collection" },
-  { name: "Gift Sets", href: "/category/gift-sets" },
-  { name: "Accessories", href: "/category/accessories" },
+  { name: "Skincare", href: "/category/skincare" },
+  { name: "Makeup", href: "/category/makeup" },
+  { name: "Hair Care", href: "/category/hair-care" },
+  { name: "Body Care", href: "/category/body-care" },
+  { name: "Men's Grooming", href: "/category/mens-grooming" },
+  { name: "Beauty Tools", href: "/category/beauty-tools" },
 ];
 
 export default function Header() {
