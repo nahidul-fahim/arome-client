@@ -2,7 +2,7 @@ import Homepage from "@/features/homepage";
 
 export default function Home() {
   return (
-    <main>
+    <main className="w-full">
       <Homepage />
     </main>
   );

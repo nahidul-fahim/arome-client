@@ -13,11 +13,11 @@
   --color-dark: #21252c;
   --color-foreground: #272B32;
   --color-card: #f8f9fa;
-  --color-primary: #94126a;
-  --color-secondary: #b5338a;
+  --color-primary: #6b49ca;
+  --color-secondary: #b6a2d7;
   --color-muted: #e9ecef;
   --color-muted-foreground: #6c757d;
-  --color-accent: #d670b3;
+  --color-accent: #8963E8;
   --color-destructive: #dc3545;
   --color-border: #dee2e6;
   --color-input: #ced4da;
@@ -37,6 +37,7 @@
     @apply bg-white text-black;
     font-family: var(--font-openSans);
   }
+
   ::selection {
     @apply bg-secondary text-white;
   }
