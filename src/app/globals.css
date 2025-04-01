@@ -7,7 +7,7 @@
 @theme {
   /* fonts */
   --font-openSans: var(--font-openSans);
-  --font-lora: var(--font-lora);
+  --font-poppins: var(--font-poppins);
   /* colors */
   --color-background: #ffffff;
   --color-dark: #21252c;
@@ -35,7 +35,7 @@
 
   body {
     @apply bg-white text-black;
-    font-family: var(--font-openSans);
+    font-family: var(--font-poppins);
   }
 
   ::selection {

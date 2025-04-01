@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Lora, Open_Sans } from "next/font/google";
+import { Open_Sans, Poppins } from "next/font/google";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
   variable: "--font-openSans",
 });
-const lora = Lora({
+const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
-  variable: "--font-lora",
+  variable: "--font-poppins",
 });
 export const metadata: Metadata = {
   title: "Areej",
@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${openSans.variable} ${lora.variable} antialiased`}>
+      <body className={`${openSans.variable} ${poppins.variable} antialiased`}>
         {children}
       </body>
     </html>
