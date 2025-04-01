@@ -11,7 +11,7 @@ import {
 export default function BannerSection() {
   const banners = [
     {
-      image: "/homepage/skincare_banner.jpg",
+      image: "/banner/skincare_banner.jpg",
       alt: "Luxury skincare collection",
       title: "Luxury Skincare",
       description:
@@ -20,7 +20,7 @@ export default function BannerSection() {
       buttonText: "Shop Now",
     },
     {
-      image: "/homepage/fragrance_banner.jpg",
+      image: "/banner/fragrance_banner.jpg",
       alt: "Designer fragrance collection",
       title: "Designer Fragrances",
       description:
@@ -29,7 +29,7 @@ export default function BannerSection() {
       buttonText: "Explore",
     },
     {
-      image: "/homepage/makeup_banner.jpg",
+      image: "/banner/makeup_banner.jpg",
       alt: "Premium Makeup",
       title: "Premium Makeup",
       description:
