@@ -83,7 +83,7 @@ export default function CategoryShowcase() {
             >
               <div className="absolute inset-0 bg-gradient-to-t from-white/70 to-black/30" />
               <div className="absolute bottom-0 left-0 p-6">
-                <h3 className="text-2xl font-bold text-muted-foreground">
+                <h3 className="text-2xl font-bold text-foreground">
                   {category.name}
                 </h3>
                 <p className="mt-2 text-sm text-muted-foreground/80">
@@ -110,9 +110,9 @@ export default function CategoryShowcase() {
               role="img"
               aria-label={category.name}
             >
-              <div className="absolute inset-0 bg-gradient-to-t from-white/90 to-black/30" />
+              <div className="absolute inset-0 bg-gradient-to-t from-white/70 to-black/30" />
               <div className="absolute bottom-0 left-0 p-4">
-                <h3 className="text-xl font-bold text-muted-foreground">
+                <h3 className="text-xl font-bold text-foreground">
                   {category.name}
                 </h3>
                 <p className="mt-1 text-sm text-muted-foreground/80">
