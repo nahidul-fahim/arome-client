@@ -54,14 +54,14 @@ export default function Header() {
   return (
     <header
       className={cn(
-        "sticky top-0 flex flex-col items-center justify-start z-50 w-full transition-all duration-200",
+        "sticky top-0 flex flex-col items-center justify-start z-50 w-full transition-all duration-200 px-5",
         isScrolled
           ? "bg-background/95 backdrop-blur-md shadow-sm"
           : "bg-background"
       )}
     >
       {/* Top bar */}
-      <div className="hidden w-full lg:flex justify-center  border-b py-2">
+      <div className="hidden w-full lg:flex justify-center border-b py-2">
         <div className="container flex items-center justify-between">
           <p className="text-sm text-muted-foreground">
             Free shipping on orders over $50 | Use code FRAGRANCE10 for 10% off
@@ -89,7 +89,7 @@ export default function Header() {
               <Menu className="h-6 w-6" />
             </Button>
           </SheetTrigger>
-          <SheetContent side="left" className="w-[300px] sm:w-[350px]">
+          <SheetContent side="left" className="w-[300px] sm:w-[350px] px-5">
             <div className="flex flex-col gap-6 py-4">
               <Link href="/" className="flex items-center gap-2 font-bold">
                 <Droplets className="h-6 w-6 text-primary" />

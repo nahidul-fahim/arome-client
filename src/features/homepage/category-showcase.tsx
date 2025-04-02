@@ -10,9 +10,11 @@ export default function CategoryShowcase() {
   );
 
   return (
-    <section className="container mx-auto py-20">
+    <section className="container mx-auto my-20 px-5">
       <div className="flex flex-col items-center text-center mb-10">
-        <h2 className="text-3xl font-bold md:text-4xl">Shop by Category</h2>
+        <h2 className="text-3xl font-bold md:text-4xl tracking-tight">
+          Shop by Category
+        </h2>
         <p className="mt-4 max-w-2xl text-muted-foreground">
           Explore our wide range of beauty and cosmetic products
         </p>

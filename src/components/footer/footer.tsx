@@ -14,7 +14,7 @@ import { Input } from "@/components/ui/input";
 
 export default function Footer() {
   return (
-    <footer className="bg-muted mx-auto w-full flex flex-col justify-center items-center py-14">
+    <footer className="bg-muted mx-auto w-full flex flex-col justify-center items-center py-14 px-5">
       <div className="container">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">

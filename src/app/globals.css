@@ -39,6 +39,6 @@
   }
 
   ::selection {
-    @apply bg-secondary text-white;
+    @apply bg-primary/70 text-white;
   }
 }
