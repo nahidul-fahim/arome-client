@@ -66,7 +66,8 @@ export default function BannerSection() {
     <section className="w-full">
       <Carousel
         className="w-full"
-        onSelect={(carouselApi) => onCarouselApiChange(carouselApi)}
+        // onSelect={(carouselApi) => onCarouselApiChange(carouselApi)}
+        // onSelect={onCarouselApiChange}
       >
         <CarouselContent>
           {banners.map((banner, index) => (
