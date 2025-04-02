@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import {
@@ -7,8 +8,13 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { useState } from "react";
+import { type CarouselApi } from "@/components/ui/carousel";
 
 export default function BannerSection() {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [carouselApi, setCarouselApi] = useState<CarouselApi | null>(null);
+
   const banners = [
     {
       image: "/banner/skincare_banner.jpg",
@@ -39,14 +45,34 @@ export default function BannerSection() {
     },
   ];
 
+  // Set up the carousel API
+  const onCarouselApiChange = (api: CarouselApi | null) => {
+    if (!api) return;
+    setCarouselApi(api);
+
+    api.on("select", () => {
+      setActiveIndex(api.selectedScrollSnap());
+    });
+  };
+
+  // Navigate to a specific slide
+  const goToSlide = (index: number) => {
+    if (carouselApi) {
+      carouselApi.scrollTo(index);
+    }
+  };
+
   return (
     <section className="w-full">
-      <Carousel className="w-full">
+      <Carousel
+        className="w-full"
+        onSelect={(carouselApi) => onCarouselApiChange(carouselApi)}
+      >
         <CarouselContent>
           {banners.map((banner, index) => (
             <CarouselItem key={index} className="md:basis-1/1">
               <div
-                className="relative h-[60vh] sm:h-[70vh] md:h-[80vh] lg:h-[90vh] xl:h-[100vh] overflow-hidden bg-cover bg-center"
+                className="relative h-[60vh] sm:h-[70vh] md:h-[80vh] lg:h-[90vh] overflow-hidden bg-cover bg-center"
                 style={{ backgroundImage: `url(${banner.image})` }}
                 role="img"
                 aria-label={banner.alt}
@@ -64,6 +90,20 @@ export default function BannerSection() {
                       <Link href={banner.link}>{banner.buttonText}</Link>
                     </Button>
                   </div>
+                </div>
+                <div className="absolute bottom-8 left-0 right-0 flex justify-center gap-2">
+                  {banners.map((_, i) => (
+                    <div
+                      key={i}
+                      className={`h-2 rounded-full cursor-pointer transition-all duration-300 ${
+                        i === activeIndex
+                          ? "w-8 bg-primary"
+                          : "w-4 bg-gray-300 hover:bg-gray-400"
+                      }`}
+                      aria-label={`Go to slide ${i + 1}`}
+                      onClick={() => goToSlide(i)}
+                    />
+                  ))}
                 </div>
               </div>
             </CarouselItem>

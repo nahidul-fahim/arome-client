@@ -1,59 +1,13 @@
+import { homepageCategories } from "@/data/homepage-data";
 import Link from "next/link";
 
-const categories = [
-  {
-    id: 1,
-    name: "Perfumes",
-    description: "Designer & niche fragrances",
-    image: "/category/perfume.jpg",
-    href: "/category/perfumes",
-    featured: true,
-  },
-  {
-    id: 2,
-    name: "Skincare",
-    description: "Science-backed formulations",
-    image: "/category/skincare.jpg",
-    href: "/category/skincare",
-    featured: true,
-  },
-  {
-    id: 3,
-    name: "Makeup",
-    description: "Color cosmetics & tools",
-    image: "/category/makeup.jpg",
-    href: "/category/makeup",
-    featured: true,
-  },
-  {
-    id: 4,
-    name: "Hair Care",
-    description: "Shampoos, treatments & styling",
-    image: "/category/haircare.jpg",
-    href: "/category/hair-care",
-    featured: false,
-  },
-  {
-    id: 5,
-    name: "Body Care",
-    description: "Lotions, scrubs & more",
-    image: "/category/bodyCare.jpg",
-    href: "/category/body-care",
-    featured: false,
-  },
-  {
-    id: 6,
-    name: "Men's Grooming",
-    description: "Skincare, fragrances & more",
-    image: "/category/menGrooming.jpg",
-    href: "/category/mens-grooming",
-    featured: false,
-  },
-];
-
 export default function CategoryShowcase() {
-  const featuredCategories = categories.filter((category) => category.featured);
-  const regularCategories = categories.filter((category) => !category.featured);
+  const featuredCategories = homepageCategories.filter(
+    (category) => category.featured
+  );
+  const regularCategories = homepageCategories.filter(
+    (category) => !category.featured
+  );
 
   return (
     <section className="container mx-auto py-20">

@@ -1,4 +1,5 @@
 import BannerSection from "./bannerSection";
+import BestSellingProducts from "./best-selling-products";
 import CategoryShowcase from "./category-showcase";
 
 const Homepage = () => {
@@ -6,6 +7,7 @@ const Homepage = () => {
     <>
       <BannerSection />
       <CategoryShowcase />
+      <BestSellingProducts />
     </>
   );
 };
