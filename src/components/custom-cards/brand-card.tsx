@@ -21,10 +21,9 @@ const BrandCard = ({ data }: { data: IBrand }) => {
       <Image
         src={image || "/placeholder.svg"}
         alt={name}
-        objectFit="cover"
-        width={300}
-        height={300}
-        className="object-cover w-full h-full rounded-t-xl"
+        width={200}
+        height={200}
+        className="aspect-square w-full h-full rounded-t-xl"
       />
       <CardHeader className="px-4 flex flex-col justify-start items-start gap-2 mt-4">
         <CardTitle className="text-lg">{name}</CardTitle>
