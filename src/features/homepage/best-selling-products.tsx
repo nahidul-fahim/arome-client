@@ -1,7 +1,7 @@
 import { mockProducts } from "../product/product-mock-data";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import ProductCard from "@/components/product/product-card";
+import ProductCard from "@/components/custom-cards/product-card";
 
 export default function BestSellingProducts() {
   const bestSellingProducts = mockProducts.filter((product) => product.isSale);
