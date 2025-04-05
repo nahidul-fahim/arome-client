@@ -5,6 +5,7 @@ import ProductCard from "@/components/custom-cards/product-card";
 
 export default function BestSellingProducts() {
   const bestSellingProducts = mockProducts.filter((product) => product.isSale);
+  
 
   return (
     <section className="my-20 mx-auto py-10 bg-muted/50">
