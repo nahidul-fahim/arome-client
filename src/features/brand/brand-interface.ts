@@ -7,4 +7,3 @@ export interface IBrand {
     reviewCount: number;
     productCount: number;
 }
-
