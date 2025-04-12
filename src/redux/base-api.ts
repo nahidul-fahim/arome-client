@@ -10,5 +10,6 @@ export const baseApi = createApi({
     baseQuery: baseQuery,
     refetchOnMountOrArgChange: true,
     refetchOnFocus: true,
+    refetchOnReconnect: true,
     endpoints: () => ({}),
 })
